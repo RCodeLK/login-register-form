@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register Form</title>
+</head>
+<body>
+    <style>
+        body{
+            background: url(images/register.jpg);
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .center{
+            background-color: white;
+            height: 100vh;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            float: right;
+        }
+    </style>
+    <div class="center">
+        <h1>Register</h1>
+        <form action="reg.php" method="post">
+            <input type="text" name="name" placeholder="Enter Your Full Name"><br>
+            <input type="text" name="unam" placeholder="Enter Your Username"><br>
+            <input type="email" name="unam" placeholder="Enter Your Email"><br>
+            <input type="password" name="pass" placeholder="Enter Your Password"><br>
+            <input type="password" name="Cpass" placeholder="Confirm Your Password"><br>
+            <button type="submit" name="submit">Regsiter</button>
+        </form>
+        <p>Already have an account <a href="index.html">Login</a> Now!</p>
+    </div>
+</body>
+</html>
